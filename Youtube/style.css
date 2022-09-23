@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 5% 95%;
+    font-family: 'YouTube Sans Dark', sans-serif;
+}
+
+#izquierda{
+    background-color:#212121;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#izquierda div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+#derecha{
+        background-color: rgb(32, 32, 32);
+        display: flex;
+        flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+}
+
+#categorias{
+    display: flex;
+    justify-content: space-around;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: rgb(55, 55, 55);
+    padding: 5px 0;
+}
+
+#categorias button{
+    background-color: rgb(55, 55, 55);
+    width: 80px;
+    margin: 7px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    color: white;
+    border: 2px solid rgb(65, 65, 65);
+    border-radius: 16px;
+}
+
+#categorias button:hover{
+    background-color: rgb(73, 73, 73);
+    font-size: 15px;
+    color: white;
+    border: 2px solid rgb(65, 65, 65);
+    border-radius: 16px;
+}
+
+input{
+    align-items: center;
+    background-color: rgb(18, 18, 18);
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 2px 0 0 2px;
+    color: rgb(255, 255, 255);
+    padding: 2px 6px;
+    margin-left: 34px;
+    height:35px;
+    width: 550px;
+    font-size: 15px;
+}
+::placeholder{
+    color: rgb(97, 97, 97);
+}
+
+#lupa{
+    padding: 1px 6px;
+    background-color: rgb(50, 50, 50);
+    height: 39px;
+    border-radius: 2px;
+    border: 1px rgb(50, 50, 50);
+}
+
+#microfono{
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 100%;
+    margin: 3px;
+    padding: 7px;
+    background-color: rgb(24, 24, 24)
+}
+
+.user{
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 100%;
+    margin: 3px;
+    padding: 0;   
+}
+
+.final{
+ margin: 10px;
+}
+
+.menu{
+    background-color: #212121;
+    border: 1px none #212121;
+    padding: 10px;
+}
+.menu:hover{
+    background-color: rgb(56, 56, 56);
+    border: 1px none rgb(18, 18, 18);
+    border-radius: 100%;
+}
+
+#microfono:hover{
+    background-color: rgb(18, 18, 18);
+}
+
+#lupa:hover{
+    background-color: rgb(34, 34, 34);
+    border: 1px solid rgb(97, 97, 97);
+}
+
+.videos{
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    color: white;
+   }
+
+.video{
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 215px;
+    width: 300px;
+}
+
+.videos2{
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    color: white;
+    }
+
+.informacion{
+ display: flex;
+}
+
+.profile{
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    padding: 5px 5px;
+}
+.views{
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+}
+
+.views p{
+    font-size: 10px;
+    color: rgb(112, 112, 112);
+}
+
+h4{
+    font-family: 'YouTube Sans', sans-serif;
+    font-size: 15px;
+}

@@ -1,0 +1,219 @@
+:root {
+  --cap: #471b0b;
+  --body: #eeeeee;
+}
+
+.box {
+  margin-top: 3%;
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  width: 500px;
+  height: 500px;
+  justify-content: start;
+}
+
+.mushroom {
+  position: absolute;
+  top: 10%;
+  left: 26%;
+  width: 50%;
+  height: 50%;
+  animation: 4s breathing infinite ease;
+}
+@keyframes breathing {
+  25% {
+    transform: scaleY(1.2) translateY(-8%);
+  }
+  75% {
+    transform: scaleY(0.8) scaleX(1.2) translateY(20%);
+  }
+}
+
+.cap {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 60%;
+  background: var(--cap);
+  border-radius: 100% 100% 50% 50%;
+}
+
+.eye-left {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  width: 10%;
+  height: 2%;
+  background: black;
+  border-radius: 0 0 50% 50%;
+}
+.eye-right {
+  position: absolute;
+  top: 65%;
+  left: 55%;
+  width: 10%;
+  height: 2%;
+  background: black;
+  border-radius: 0 0 50% 50%;
+}
+
+.mouth {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  width: 10%;
+  height: 10%;
+  background: black;
+  border-radius: 100%;
+  animation: 4s mouthbreath infinite ease;
+}
+@keyframes mouthbreath {
+  25% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scaleX(0.5) scaleY(1.2);
+  }
+}
+
+.body {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background: var(--body);
+  border-radius: 0 0 30% 30%;
+}
+
+.body-shadow {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 30%;
+  background: rgba(102, 102, 102, 0.5);
+  border-radius: 0 0 10% 10%;
+}
+
+.grass {
+  position: absolute;
+  top: 65%;
+  left: 0%;
+  width: 100%;
+  height: 35%;
+  background: var(--grass);
+  -webkit-clip-path: polygon(
+    0 83%,
+    5% 76%,
+    8% 83%,
+    16% 74%,
+    18% 86%,
+    26% 76%,
+    29% 86%,
+    36% 75%,
+    43% 85%,
+    48% 77%,
+    53% 86%,
+    60% 76%,
+    64% 85%,
+    69% 76%,
+    73% 85%,
+    81% 76%,
+    83% 86%,
+    89% 76%,
+    93% 90%,
+    98% 76%,
+    100% 89%,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 83%,
+    5% 76%,
+    8% 83%,
+    16% 74%,
+    18% 86%,
+    26% 76%,
+    29% 86%,
+    36% 75%,
+    43% 85%,
+    48% 77%,
+    53% 86%,
+    60% 76%,
+    64% 85%,
+    69% 76%,
+    73% 85%,
+    81% 76%,
+    83% 86%,
+    89% 76%,
+    93% 90%,
+    98% 76%,
+    100% 89%,
+    100% 100%,
+    0 100%
+  );
+}
+
+.zzz {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 10%;
+  height: 10%;
+  font-size: 100%;
+  color: white;
+  font-family: Helvetica;
+  animation: 4s snoring infinite linear;
+}
+.zzz2 {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 10%;
+  height: 10%;
+  font-size: 100%;
+  color: transparent;
+  font-family: Helvetica;
+  animation: 4s snoring infinite linear;
+  animation-delay: 2s;
+}
+.zzz3 {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 10%;
+  height: 10%;
+  font-size: 100%;
+  color: transparent;
+  font-family: Helvetica;
+  animation: 4s snoring infinite linear;
+  animation-delay: 3s;
+}
+@keyframes snoring {
+  0% {
+    color: rgba(255, 255, 255, 0);
+  }
+  25% {
+    transform: translateX(-20%) translateY(-15%) scale(1.25);
+    color: rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    transform: translateX(10%) translateY(-20%) scale(1.5);
+  }
+  75% {
+    transform: translateX(-30%) translateY(-30%) scale(1.75);
+    color: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    transform: translateX(30%) translateY(-45%) scale(2);
+    color: rgba(255, 255, 255, 0);
+  }
+}
+@media only screen and (max-width: 600px) {
+    .mushroom {
+      left: 0%;
+    }
+}
